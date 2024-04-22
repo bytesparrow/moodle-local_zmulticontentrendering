@@ -1,0 +1,17 @@
+<div role="main">
+    <div class="row">
+        {{#pdfcontent}}
+        <div class="col-lg-6 col-xs-12">
+            {{{basecontent}}}
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            {{{pdfcontent}}}
+        </div>
+        {{/pdfcontent}}
+        {{^pdfcontent}}
+        <div class="col-12">
+            {{{basecontent}}}
+        </div>
+        {{/pdfcontent}}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+    "name": "bytesparrow/zmulticontentrendering",
+    "description": "Using (and editing) this plugin you can re-order the content if using custom fields for enhancing your content",
+    "type": "moodle-local",
+    "keywords": ["moodle", "render", "multi content", "h5p", "pdf"],
+    "license": "GPLv3",
+    "version": "v1.0-alpha1",
+    "authors": [
+        {
+            "name": "Bernhard Strehl",
+            "email": "moodle@bytesparrow.de",
+            "homepage": "https://www.bytesparrow.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "moodle@bytesparrow.de"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "composer/installers": "~2.2"
+    }
+    
+}
+
