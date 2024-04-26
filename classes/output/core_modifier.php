@@ -41,6 +41,7 @@ class core_modifier extends \core_modifier_base {
     $model->basecontent = $this->extractBaseContent($maincontent);
     $model->pdfcontent = $this->extractPDF($maincontent);
 
+    //the template does the logic. If no PDF is present, it will only print one column, not two.
     $maincontent = $OUTPUT->render_from_template('local_zmulticontentrendering/wrapped_content', $model);
   }
 
