@@ -50,7 +50,7 @@ class core_modifier extends \core_modifier_base {
    * @param type $maincontent
    */
   function extractBaseContent(&$maincontent) {
-    preg_match('/\[MAIN CONTENT GOES HERE - [a-zA-Z]*\]/i', $maincontent, $phpmatchobject);
+    preg_match('/\[MAIN CONTENT GOES HERE - [a-zA-Z0-9]*\]/i', $maincontent, $phpmatchobject);
     return $phpmatchobject[0];
   }
 
