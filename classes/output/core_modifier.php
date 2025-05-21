@@ -56,7 +56,7 @@ class core_modifier extends \core_modifier_base {
    */
   function extractBaseContent(&$maincontent) {
     preg_match('/\[MAIN CONTENT GOES HERE - [a-zA-Z0-9]*\]/i', $maincontent, $phpmatchobject);
-    return $phpmatchobject[0];
+    return is_array($phpmatchobject)?$phpmatchobject[0]:null;
   }
 
   /**
@@ -65,7 +65,7 @@ class core_modifier extends \core_modifier_base {
    */
   function extractPDF(&$maincontent) {
     preg_match('/<!--html5pdf-->.*<!--\/html5pdf-->/ims', $maincontent, $phpmatchobject);
-    return $phpmatchobject[0];
+    return is_array($phpmatchobject)?$phpmatchobject[0]:null;
   }
 
 }
