@@ -26,7 +26,7 @@ defined('MOODLE_INTERNAL') || die();
 
 
 $plugin->component = 'local_zmulticontentrendering';
-$plugin->version   = 2023042405;
+$plugin->version   = 2023042406;
 $plugin->requires  = 2022041900;
 $plugin->supported = [400, 403];
 $plugin->maturity = MATURITY_ALPHA;

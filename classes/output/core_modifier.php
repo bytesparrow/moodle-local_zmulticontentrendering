@@ -65,7 +65,8 @@ class core_modifier extends \core_modifier_base {
    */
   function extractPDF(&$maincontent) {
     preg_match('/<!--html5pdf-->.*<!--\/html5pdf-->/ims', $maincontent, $phpmatchobject);
-    return is_array($phpmatchobject)?$phpmatchobject[0]:null;
+    $pdfexists = is_array($phpmatchobject) && array_count_values($phpmatchobject);
+    return $pdfexists?$phpmatchobject[0]:null;
   }
 
 }
